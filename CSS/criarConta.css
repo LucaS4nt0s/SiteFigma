@@ -1,1 +1,97 @@
+form{
+    width: 358px;
+    height: 736px;
+}
 
+label{
+    font-family: "Raleway", sans-serif;	
+    font-weight: 700;
+}
+
+.Pais-e-Telefone{
+    display: flex;
+    gap: 15px;
+}
+
+.forms-input{
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    font-size: 16px;
+}
+
+.conjunto-pais, .conjunto-telefone{
+    display: flex;
+    flex-direction: column;
+}
+
+.conjunto-telefone input{
+    width: 171px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    font-size: 16px;
+}
+
+.conjunto-pais input{
+    width: 74px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    font-size: 16px;
+    background-image: url(../IMG/bandeira-brasil.png);
+    background-size: 15px 15px; 
+    background-position: 85% center;
+    background-repeat: no-repeat;
+}
+
+.senha input{
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.ajuda-senha{
+    color: var(--white);
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;	
+}
+
+.cancelar-criacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border: 1px solid var(--orange-links);
+    border-radius: 10px;
+}
+
+.criar-conta-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 10px 0;
+    background-color: var(--buttons-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: 'Luckiest Guy', serif;
+    font-size: 20px;
+    font-weight: 400;    
+}

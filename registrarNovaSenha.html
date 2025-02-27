@@ -8,30 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="CSS/criarConta.css">
+    <link rel="stylesheet" href="CSS/registrarNovaSenha.css">
+    <title>Regitrar Nova Senha</title>
 </head>
 <body>
     <div class="container">
-        <form>
-            <fieldset class="titulo">
-                <a href="perfil.html"><img src="IMG/icon_minecraft.png" alt="icone_minecraft">LOGIN WITH MC ACCOUNT</a>
-                <label><h1>CREATE YOUR ACCOUNT OR LOGIN</h1></label>
+        <form action="index.html">
+            <fieldset class="titulo-criar-conta form-registrar">
+                <a href="index.html" class="x-voltar"><i class="fa-solid fa-x"></i></a>
+                <label><span class="titulo-criar">Register Your New Password</span></label>
             </fieldset>
 
-            <fieldset class="login">
-                <label for="email">E-mail or Nickname</label>
-                <input type="email" id="email" name="email" placeholder="Registration e-mail or nickname" required>
-                <label for="senha">Password: </label>
-                <div>
-                    <input type="password" id="senha" name="senha" placeholder="Your password" required>
-                    <i class="fa-solid fa-eye-slash"></i>
-                </div> 
-                <a href="recuperarSenha.html">Forgot password?</a>
+            <fieldset class="forms-geral">
+                <div class="conjunto-criar-senha">
+                    <label for="senha">New Password</label>
+                    <div class="senha">
+                        <input type="password" id="senha" name="senha" placeholder="Your password"  required>
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <label><span class="ajuda-senha">8 Character - Number - Capital Letter</span></label>
+                </div>
+                <div class="conjunto-inputs">
+                    <label for="confirmar-senha">Confirm Password</label>
+                    <div class="senha">
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirm your password" required>
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                </div>
             </fieldset>
             
             <fieldset class="botao">
-                <button>Create Account</button>
-                <button type="submit">Login</button>
+                <fieldset class="botao">
+                    <a href="index.html" class="cancelar-criacao btn-laranja">Cancel</a>
+                    <button type="submit" class="criar-conta-btn botao-vermelho">Recovery Password</button>
+                </fieldset>
             </fieldset>
         </form>
 </body>

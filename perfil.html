@@ -6,33 +6,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Micro+5&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/perfil.css">
     <title>Perfil</title>
 </head>
 <body>
-    <div class="container">
-        <form>
-            <fieldset class="titulo">
-                <a href="perfil.html"><img src="IMG/icon_minecraft.png" alt="icone_minecraft">LOGIN WITH MC ACCOUNT</a>
-                <label><h1>CREATE YOUR ACCOUNT OR LOGIN</h1></label>
-            </fieldset>
+    <header>
+        <nav class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="perfil-pessoa">
+                <span class="nome">LucaGamer</span>
+                <img src="IMG/foto-perfil.png" alt="foto de perfil" class="foto-perfil">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="perfil-completo">
+            <div class="banner-time">
+                <img src="IMG/Banner-furia.jpeg" alt="Banner do Time Da Furia" class="banner-furia">
+            </div>
+            <img src="IMG/bandeira-brasil.png" alt="Bandeira do Brasil" class="bandeira-brasil">
+            <div class="informacoes-pessoa">
+                <img src="IMG/perfil.png" alt="foto de perfil" class="foto-homem">
+                <div class="texto-informacoes">
+                    <span class="nome">Username</span>
+                    <span class="nick-name">(Nickname)</span>
+                </div>
+            </div>
+        </div>
 
-            <fieldset class="login">
-                <label for="nickname">E-mail or Nickname</label>
-                <input type="text" id="nickname" name="nickname" placeholder="Registration e-mail or nickname">
-                <label for="senha">Password: </label>
-                <div>
-                    <input type="password" id="senha" name="senha" placeholder="Your password" required>
-                    <i class="fa-solid fa-eye-slash"></i>
-                </div> 
-                <a href="recuperarSenha.html">Forgot password?</a>
-            </fieldset>
-            
-            <fieldset class="botao">
-                <button>Create Account</button>
-                <button type="submit">Login</button>
-            </fieldset>
-        </form>
+        <div class="mandar-mensagem">
+            <button class="btn-mensagem"><i class="fa-regular fa-message"></i> Send Message</button>
+        </div>
+
+        <div class="social-media">
+            <span class="titulo-social">Social Media</span>
+            <div class="social-media-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-twitch"></i>
+                <i class="fa-brands fa-discord"></i>
+            </div>  
+        </div>
+
+        <div class="caixa">
+            <span class="titulo-caixa">Guild Description</span>
+            <div class="conteudo">Information</div>
+        </div>
+
+        <div class="preferencias">
+            <span class="titulo-preferencias">Preferences</span>
+            <div class="Jogos-preferidos">
+                <ul>
+                    <li><a href="/">Survival Games</a></li>
+                    <li><a href="/">PVP</a></li>
+                    <li><a href="/">Sky wars</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="perfil-pessoa">
+            <img src="IMG/foto-perfil.png" alt="foto de perfil" class="foto-perfil">
+            <span class="nome-footer">LucaGamer</span>
+        </div>
+        <div class="Texto-Footer">
+            <span class="texto">version</span>
+            <span class="texto1">1.3.34</span>
+        </div>
+    </footer>
 </body>
 </html>
