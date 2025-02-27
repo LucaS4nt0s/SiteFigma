@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #131313;
+    --orange-links: #DA6D57;
+    --buttons-color: #840000;
+    --dark-red: #5F0010;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100vw;
+    background: linear-gradient(to top, var(--dark-red) 0%, var(--dark-color)60%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.titulo {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    border-bottom: solid 0.5px var(--white);
+}
+
+.titulo h1{
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.icon_minecraft {
+    width: 16px;
+    height: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    border: 1px solid var(--buttons-color);
+    border-radius: 24px;
+    padding: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+}
+
+a {
+    color: var(--orange-links);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Luckiest Guy', serif;
+}
+
+.esqueceu_senha_link{
+    text-decoration: underline;
+    font-size: 12px;
+    margin: 15px 0 0 15px;
+}
+
+.entrar-conta-mc{
+    width: 236px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border: 1px solid var(--orange-links);
+    border-radius: 10px;
+}
+
+.login{
+    padding: 25px 0;
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: solid 0.5px var(--white);
+}
+
+.login input{
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    font-size: 16px;
+}
+
+.senha{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-eye-slash{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login label{
+    padding: 0px;
+    margin: 0px;
+}
+
+.campo_senha{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.criar-conta{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border: 1px solid var(--orange-links);
+    border-radius: 10px;
+}
+
+.btn-login{
+    width: 100%;
+    height: 40px;
+    background-color: var(--buttons-color);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Luckiest Guy', serif;	
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form action="perfil.html">
+            <fieldset class="titulo">
+                <label><h1>CREATE YOUR ACCOUNT OR LOGIN</h1></label>
+                <a href="perfil.html" class="entrar-conta-mc"><img src="IMG/icon_minecraft.png" alt="icone_minecraft" class="icon_minecraft">LOGIN WITH MC ACCOUNT</a>
+            </fieldset>
+
+            <fieldset class="login">
+                <div>
+                    <label for="nickname">E-mail or Nickname</label>
+                    <input type="text" id="nickname" name="nickname" placeholder="Registration e-mail or nickname" required>
+                </div>
+                <div  class="campo_senha">
+                    <div>
+                        <label for="senha">Password: </label>
+                        <div class="senha">
+                        <input type="password" id="senha" name="senha" placeholder="Your password" required>
+                        <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div> 
+                    <a href="recuperarSenha.html" class="esqueceu_senha_link">Forgot password?</a>  
+                </div>
+            </fieldset>
+            
+            <fieldset class="botao">
+                <a class="criar-conta" href="/criarConta.html">Create Account</a>
+                <button type="submit" class="btn-login">Login</button>
+            </fieldset>
+        </form>
+</body>
+</html>
